@@ -11,6 +11,9 @@
 #  get: get the value of the matrix
 #  setSolve: set the value of the solve
 #  getSolve: get the value of the solve
+#
+# example:
+#  cacheMatrix <- makeCacheMatrix((matrix(c(1,4,5,6,7,8,9,3,6), nrow = 3, ncol = 3)))
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -37,6 +40,9 @@ makeCacheMatrix <- function(x = matrix()) {
 #
 # Returns:
 #  the inverse metrix of 'x'
+#
+# example:
+#  matrix <- cacheSolve(cacheMatrix)
 
 
 cacheSolve <- function(x, ...) {
